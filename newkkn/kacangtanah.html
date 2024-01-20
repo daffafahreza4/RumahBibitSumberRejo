@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi Lengkap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mobile-menu-btn").click(function (e) {
+                e.preventDefault();
+                $(".mobile-menu-dropdown").toggleClass("hidden");
+            });
+
+            // Handle click on mobile menu links
+            $(".mobile-menu-dropdown a").click(function (e) {
+                e.preventDefault();
+                $(".mobile-menu-dropdown").addClass("hidden");
+                var targetPage = $(this).attr("href");
+                if (targetPage !== "javascript:void(0)") {
+                    // Redirect to the selected page if it's not "javascript:void(0)"
+                    window.location.href = targetPage;
+                }
+            });
+        });
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./foto/logo_desa.jpg" alt="Rumah Bibit" class="logo" />
+                </a>
+                <p class="site-title">RUMAH BIBIT DIGITAL SUMBER REJO</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="w-screen h-10"></div>
+        <div class="container mx-auto p-8 flex flex-col lg:items-center lg:justify-center">
+            <div class="mb-4 lg:mr-8 lg:mb-5">
+                <img src="./foto/kacangtanah.jpeg" alt="Cabai" class="centered-image rounded-xl" /><br>
+            </div>
+            <div class="classification text-justify">
+                <h2>Kacang Tanah</h2>
+                <span class="pl-10">Kacang Tanah</span> (Arachis hypogaea) merupakan tumbuhan asli Amerika Selatan yang telah menjadi tanaman penting di seluruh dunia. 
+                Tanaman ini tumbuh sebagai semak kecil dengan daun menjari dan bunga kuning yang muncul di atas tanah. Yang unik, buah kacang 
+                tanah berkembang di bawah tanah, diambil dari kelopak bunga yang membesar dan mengebor ke dalam tanah. Kacang tanah kaya akan 
+                nutrisi, termasuk protein, lemak sehat, serat, dan sejumlah vitamin serta mineral. Selain itu, mereka mengandung antioksidan 
+                seperti resveratrol, yang dikenal memiliki manfaat kesehatan. Kacang tanah umumnya dikonsumsi sebagai makanan ringan atau diolah 
+                menjadi mentega kacang. Mereka juga digunakan dalam berbagai hidangan, termasuk saus kacang, salad, dan hidangan khas seperti 
+                gado-gado. Selain sebagai bahan makanan, kacang tanah memiliki peran penting sebagai tanaman pangan dan pakan ternak, ditanam 
+                luas di berbagai wilayah sebagai sumber protein nabati dan minyak. Meskipun tumbuh di Amerika Selatan, kacang tanah telah menyebar 
+                dan menjadi komoditas pertanian yang vital di berbagai negara, memberikan kontribusi pada ketahanan pangan dan ekonomi global. 
+            </div>
+        </div>
+
+        <div class="classification text-justify">
+            <h2>Klasifikasi Kacang tanah</h2>
+            <p>Tanaman Kacang Tanah termasuk dalam genus <i>Arachis hypogaea</i>. Berikut adalah klasifikasi kacang tanah hingga tingkat spesies:</p>
+        
+            <ul>
+                <li><strong>Kingdom:</strong> Plantae (Tumbuhan)</li>
+                <li><strong>Divisi:</strong> Magnoliophyta (Tumbuhan Berbunga)</li>
+                <li><strong>Kelas:</strong> Magnoliopsida (Dicotyledon)</li>
+                <li><strong>Order:</strong> Fabales</li>
+                <li><strong>Familia:</strong> Fabaceae (Kacang-kacangan)</li>
+                <li><strong>Subfamili:</strong> Fabaceae (Kacang-kacangan)</li>
+                <li><strong>Suku:</strong> Fabaceae (Kacang-kacangan)</li>
+                <li><strong>Genus:</strong> Arachis</li>
+                <li><strong>Spesies:</strong> Arachis hypogaea</li>
+            </ul>
+            <p>Dengan klasifikasi ini, kita dapat melihat bahwa kacang tanah termasuk dalam keluarga Fabaceae, yang juga dikenal sebagai keluarga 
+                kacang-kacangan. Kacang tanah dikelompokkan dalam genus Arachis dan memiliki nama spesifik hypogaea, menunjukkan bahwa buahnya 
+                berkembang di bawah tanah. Sistem klasifikasi ini membantu dalam mengidentifikasi dan memahami hubungan evolusi kacang tanah dengan 
+                tumbuhan lainnya.</p>
+        </div>
+
+        <div class ="classification text-justify"> 
+            <h2>Tips Perawatan</h2>
+            <ul>
+                <li><strong>Lokasi Penanaman: </strong> Pilih lokasi yang mendapatkan sinar matahari penuh, karena kacang tanah membutuhkan cahaya matahari yang cukup.</li>
+                <li><strong>Persiapan Tanah: </strong> Sebelum menanam, pastikan tanah subur dengan memberikan pupuk organik untuk meningkatkan kandungan nutrisinya.</li>
+                <li><strong>Penyemaian Benih: </strong> Rendam biji kacang tanah dalam air selama beberapa jam untuk mempercepat perkecambahan, lalu tanam dengan kedalaman sekitar 5-7 cm di dalam tanah.</li>
+                <li><strong>Irigasi yang Konsisten: </strong> Berikan irigasi yang konsisten selama musim tanam, terutama saat bunga berkembang dan buah mulai terbentuk.</li>
+                <li><strong>Pengendalian Hama dan Penyakit: </strong> Awasi tanaman untuk tanda-tanda hama seperti kutu dan ulat, serta penyakit seperti penyakit daun atau busuk pangkal batang.</li>
+            </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-8">
+        <div class="container mx-auto">
+            <img src="./foto/logo_desa.jpg" alt="logo sumber rejo" class="w-16 mb-4 mx-auto">
+            <h3 class="text-lg font-semibold">Rumah Bibit</h3>
+            <p class="mb-4">Sumber Rejo, Kota Gajah, Laampung Tengah, Lampung, Dusun 4</p>
+
+            <ul class="flex justify-center space-x-4">
+                <li><a href="https://www.tiktok.com/@kkn68sumberrejo?_t=8jBmcvHpcMz&_r=1" target="_blank" class="text-white"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://www.instagram.com/kkn68_sumberrejo?igsh=ZnJqbWh6OWgzYWxm" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+            <p class="mt-4 text-sm">&copy; KELOMPOK KKN 68</p>
+        </div>
+    </footer>
+</body>
+</html>

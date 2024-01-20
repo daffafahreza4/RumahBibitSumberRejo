@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi Lengkap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mobile-menu-btn").click(function (e) {
+                e.preventDefault();
+                $(".mobile-menu-dropdown").toggleClass("hidden");
+            });
+
+            // Handle click on mobile menu links
+            $(".mobile-menu-dropdown a").click(function (e) {
+                e.preventDefault();
+                $(".mobile-menu-dropdown").addClass("hidden");
+                var targetPage = $(this).attr("href");
+                if (targetPage !== "javascript:void(0)") {
+                    // Redirect to the selected page if it's not "javascript:void(0)"
+                    window.location.href = targetPage;
+                }
+            });
+        });
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./foto/logo_desa.jpg" alt="Rumah Bibit" class="logo" />
+                </a>
+                <p class="site-title">RUMAH BIBIT DIGITAL SUMBER REJO</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="w-screen h-10"></div>
+        <div class="container mx-auto p-8 flex flex-col lg:items-center lg:justify-center">
+            <div class="mb-4 lg:mr-8 lg:mb-5">
+                <img src="./foto/cabai.jpeg" alt="Cabai" class="centered-image rounded-xl" /><br>
+            </div>
+            <div class="classification text-justify">
+                <h2>Cabai</h2>
+                <span class="pl-10">Cabai</span> adalah tumbuhan dari genus Capsicum dalam keluarga Solanaceae, memiliki sejarah panjang sebagai tanaman asli Amerika Tengah dan Selatan. Tanaman cabai, yang dapat tumbuh sebagai semak atau tanaman tahunan, dikenal dengan buahnya yang memiliki rasa pedas yang khas, yang disebabkan oleh keberadaan senyawa kimia bernama capsaicin. Capsaicin ini, yang terutama terdapat di biji dan membran buah, memberikan tingkat kepedasan yang berbeda antar varietas.
+                Berbagai varietas cabai menawarkan keanekaragaman ukuran, bentuk, dan warna buah. Misalnya, cabai merah besar, cabai rawit, cabai hijau, cabai kuning, dan cabai jalapeño adalah beberapa jenis yang umum. Setiap varietas memiliki karakteristik unik, seperti kepedasan yang bervariasi, bentuk buah yang khas, dan warna yang mencolok.
+                Tanaman cabai tumbuh baik di berbagai kondisi iklim, meskipun suhu yang hangat mendukung pertumbuhan optimalnya. Kelembaban tanah yang moderat dan sinar matahari yang cukup juga memainkan peran penting dalam kultivasinya. Proses pertumbuhan dan perkembangan cabai dari benih hingga buah matang melibatkan perawatan yang cermat, termasuk pemilihan benih berkualitas, pemeliharaan lingkungan yang optimal, dan pengelolaan penyakit.
+                Dalam konteks kuliner, cabai menjadi salah satu bumbu yang paling populer di dunia. Keberagaman rasa dan kepedasannya membuat cabai menjadi elemen kunci dalam berbagai masakan global. Selain itu, cabai juga memiliki nilai nutrisi, menyediakan vitamin A dan C. Dengan segala keunikan dan kontribusinya, cabai tidak hanya memberikan pengalaman rasa yang menarik, tetapi juga mencerminkan keanekaragaman budaya dan kuliner di berbagai belahan dunia.
+            </div>
+        </div>
+
+        <div class="classification text-justify">
+            <h2>Klasifikasi Cabai</h2>
+            <p>Tanaman cabai termasuk dalam genus <i>Capsicum</i> dan keluarga <i>Solanaceae</i>. Berikut adalah klasifikasi cabai hingga tingkat familia:</p>
+        
+            <ul>
+                <li><strong>Kingdom:</strong> Plantae (Tumbuhan)</li>
+                <li><strong>Divisi:</strong> Angiospermae (Tumbuhan berbunga)</li>
+                <li><strong>Kelas:</strong> Magnoliopsida (Dicotyledoneae, tumbuhan berkeping dua)</li>
+                <li><strong>Order:</strong> Solanales</li>
+                <li><strong>Familia:</strong> Solanaceae (familia teratai-terataian)</li>
+            </ul>
+        
+            <p>Dalam familia <i>Solanaceae</i>, genus <i>Capsicum</i> mencakup beberapa spesies cabai yang umumnya dikenal. Contohnya termasuk:</p>
+        
+            <ul>
+                <li><strong>Capsicum annuum:</strong> Mengandung berbagai varietas cabai seperti cabai merah besar, cabai hijau, dan cabai kuning.</li>
+                <li><strong>Capsicum frutescens:</strong> Mengandung varietas cabai rawit dan cabai jenis lain yang cenderung memiliki rasa pedas yang lebih intens.</li>
+            </ul>
+        
+            <p>Setiap spesies dan varietas cabai memiliki ciri-ciri khusus yang membedakan satu sama lain, termasuk bentuk buah, warna, tingkat kepedasan, dan karakteristik pertumbuhan. Klasifikasi ini membantu para peneliti, petani, dan ahli botani untuk mengidentifikasi, mengkategorikan, dan memahami kelompok tanaman ini dengan lebih baik.</p>
+        </div>
+
+        <div class ="classification text-justify"> 
+            <h2>Tips Perawatan</h2>
+            <ul>
+                <li><strong>Lokasi Penanaman: </strong> Pilih lokasi yang terkena sinar matahari penuh, minimal 6-8 jam per hari.</li>
+                <li><strong>Pengendalian Hama dan Penyakit: </strong> Perhatikan tanda-tanda serangan hama seperti kutu dan ulat serta penyakit seperti penyakit daun atau penyakit akar.</li>
+                <li><strong>Pemeliharaan Tanah: </strong> Berikan tanah yang subur dan kaya nutrisi dengan menggunakan pupuk organik sebelum tanam.</li>
+                <li><strong>Irigasi yang Tepat: </strong> Cabai membutuhkan penyiraman yang konsisten, terutama selama periode berbunga dan pembentukan buah.</li>
+                <li><strong>Dukungan Tanaman: </strong> Pemasangan penyangga atau dukungan untuk tanaman cabai yang tinggi seperti cabai merah besar dapat mencegah robohnya tanaman dan mendukung perkembangan buah.</li>
+            </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-8">
+        <div class="container mx-auto">
+            <img src="./foto/logo_desa.jpg" alt="logo sumber rejo" class="w-16 mb-4 mx-auto">
+            <h3 class="text-lg font-semibold">Rumah Bibit</h3>
+            <p class="mb-4">Sumber Rejo, Kota Gajah, Laampung Tengah, Lampung, Dusun 4</p>
+
+            <ul class="flex justify-center space-x-4">
+                <li><a href="https://www.tiktok.com/@kkn68sumberrejo?_t=8jBmcvHpcMz&_r=1" target="_blank" class="text-white"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://www.instagram.com/kkn68_sumberrejo?igsh=ZnJqbWh6OWgzYWxm" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+            <p class="mt-4 text-sm">&copy; KELOMPOK KKN 68</p>
+        </div>
+    </footer>
+</body>
+</html>

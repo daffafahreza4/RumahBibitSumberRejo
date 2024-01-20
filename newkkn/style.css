@@ -1,0 +1,382 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer; /* Menambahkan cursor pointer ketika diarahkan ke logo */
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+}
+
+.classification {
+    margin-bottom: 20px;
+}
+
+.classification h2 {
+    color: #333;
+}
+
+.classification p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.classification ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.classification li {
+    margin-bottom: 5px;
+}
+
+.hero {
+    background-image: url(./foto/rumahbibit.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.profile-section {
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.profile-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-section div {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.profile-section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profile-section p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.benefits-section {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.benefits-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    margin-bottom: 1rem;
+}
+
+.bibit-list-section {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.bibit-list-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.bibit-cards-container {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem; /* Jarak antara kartu */
+justify-content: space-between;
+}
+
+.bibit-card {
+position: relative;
+flex: 0 0 calc(33.33% - 1rem); /* Lebar kartu 33.33% dari lebar container dengan jarak 1rem */
+max-width: 100%;
+height: 20rem;
+background-size: cover;
+background-position: center;
+border-radius: 1rem;
+margin-bottom: 2rem;
+}
+
+.bibit-card .overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(52, 85, 235, 0.7);
+padding: 1rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+}
+
+.bibit-card h2,
+.bibit-card p,
+.bibit-card a {
+color: #ffffff;
+}
+
+.bibit-card h2 {
+font-size: 1.5rem;
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+.bibit-card p {
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+.bibit-card a {
+background-color: #3455EB;
+color: #ffffff;
+padding: 0.5rem 1rem;
+border-radius: 0.5rem;
+text-decoration: none;
+font-weight: bold;
+font-size: 0.9rem;
+}
+
+.bibit-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(52, 85, 235, 0.7);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.bibit-card .overlay img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bibit-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.bibit-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.bibit-card a {
+    background-color: #3455EB;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer ul li {
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.fab {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1023px) {
+    .profile-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+.bibit-list-section {
+    text-align: center;
+}
+
+.bibit-card {
+    flex: 0 0 calc(100% - 1rem);
+}
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-gray-700 {
+    color: #4a5568;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.bg-gray-900 {
+    background-color: #1a202c;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+.h-10 {
+    height: 2.5rem;
+}

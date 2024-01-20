@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi Lengkap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mobile-menu-btn").click(function (e) {
+                e.preventDefault();
+                $(".mobile-menu-dropdown").toggleClass("hidden");
+            });
+
+            // Handle click on mobile menu links
+            $(".mobile-menu-dropdown a").click(function (e) {
+                e.preventDefault();
+                $(".mobile-menu-dropdown").addClass("hidden");
+                var targetPage = $(this).attr("href");
+                if (targetPage !== "javascript:void(0)") {
+                    // Redirect to the selected page if it's not "javascript:void(0)"
+                    window.location.href = targetPage;
+                }
+            });
+        });
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./foto/logo_desa.jpg" alt="Rumah Bibit" class="logo" />
+                </a>
+                <p class="site-title">RUMAH BIBIT DIGITAL SUMBER REJO</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="w-screen h-10"></div>
+        <div class="container mx-auto p-8 flex flex-col lg:items-center lg:justify-center">
+            <div class="mb-4 lg:mr-8 lg:mb-5">
+                <img src="./foto/terong.jpeg" alt="Terong" class="centered-image rounded-xl" /><br>
+            </div>
+            <div class="classification text-justify">
+                <h2>Terong</h2>
+                <span class="pl-10">Terong</span> tanaman berbuah yang termasuk dalam keluarga Solanaceae. Buah terong, sering berwarna ungu atau hijau, 
+                dikenal dengan rasa khasnya dan digunakan dalam berbagai masakan di berbagai budaya. Selain memberikan kontribusi pada rasa masakan, 
+                terong juga memiliki nilai gizi yang baik, mengandung vitamin C, vitamin K, vitamin B6, serat, dan antioksidan. Tanaman terong 
+                umumnya ditanam di kebun atau lahan pertanian dengan pemeliharaan kelembaban tanah, pemupukan yang tepat, dan pengendalian hama 
+                dan penyakit. Dengan berbagai varietas seperti terong ungu, terong hijau, dan terong kuning, terong menjadi bagian yang berharga 
+                dalam kuliner global, menyajikan variasi rasa dan kegunaan yang luas.</div>
+        </div>
+
+        <div class="classification text-justify">
+            <h2>Klasifikasi Terong</h2>
+            <p>Tanaman terong termasuk dengan nama latin <i>Solanum melongena</i>. Berikut adalah klasifikasi cabai hingga tingkat genus:</p>
+        
+            <ul>
+                <li><strong>Kingdom:</strong> Plantae (Tumbuhan)</li>
+                <li><strong>Divisi:</strong> Magnoliophyta (Tumbuhan Berbunga)</li>
+                <li><strong>Kelas:</strong> Magnoliopsida (Dicotyledoneae, tumbuhan berkeping dua)</li>
+                <li><strong>Ordo:</strong> Solanales</li>
+                <li><strong>Familia:</strong> Solanaceae (familia teratai-terataian)</li>
+                <li><strong>Genus: </strong> Solanum (Genus yang mencakup berbagai tanaman termasuk terong)</li>
+            </ul>
+        
+            <p>Terong adalah anggota keluarga Solanaceae yang juga mencakup tanaman-tanaman 
+                seperti tomat, cabai, dan kentang. Dalam klasifikasi ini, terong termasuk dalam 
+                ordo Solanales yang mencakup berbagai tanaman berbunga. Kelasifikasi ini membantu dalam 
+                memahami hubungan evolusi dan karakteristik botani tanaman terong dalam konteks taksonomi tumbuhan.</p>
+        </div>
+
+        <div class ="classification text-justify"> 
+            <h2>Tips Perawatan</h2>
+            <ul>
+                <li><strong>Lokasi Penanaman: </strong> Pilih lokasi yang mendapat sinar matahari penuh dengan tanah yang subur dan memiliki drainase yang baik.</li>
+                <li><strong>Pengendalian Hama dan Penyakit: </strong> Pantau tanaman secara teratur untuk tanda-tanda hama seperti ulat atau kutu, dan terapkan metode pengendalian hama yang sesuai atau gunakan insektisida organik jika diperlukan.</li>
+                <li><strong>Pemupukan: </strong> Berikan pupuk organik atau pupuk yang kaya fosfor dan kalium untuk mendukung pertumbuhan dan pembentukan buah.</li>
+                <li><strong>Pemeliharaan Lingkungan: </strong> Lindungi tanaman terong dari angin kencang yang dapat merusak batang dan daun, serta pastikan area sekitar tanaman bersih dari gulma yang dapat bersaing dengan nutrisi dan air.</li>
+                <li><strong>Dukungan Tanaman: </strong> Pasang dukungan atau tiang penyangga untuk tanaman terong yang tumbuh tinggi agar dapat menopang batang dan buah.</li>
+            </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-8">
+        <div class="container mx-auto">
+            <img src="./foto/logo_desa.jpg" alt="logo sumber rejo" class="w-16 mb-4 mx-auto">
+            <h3 class="text-lg font-semibold">Rumah Bibit</h3>
+            <p class="mb-4">Sumber Rejo, Kota Gajah, Laampung Tengah, Lampung, Dusun 4</p>
+
+            <ul class="flex justify-center space-x-4">
+                <li><a href="https://www.tiktok.com/@kkn68sumberrejo?_t=8jBmcvHpcMz&_r=1" target="_blank" class="text-white"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://www.instagram.com/kkn68_sumberrejo?igsh=ZnJqbWh6OWgzYWxm" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+            <p class="mt-4 text-sm">&copy; KELOMPOK KKN 68</p>
+        </div>
+    </footer>
+</body>
+</html>

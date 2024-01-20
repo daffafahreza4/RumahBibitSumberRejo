@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi Lengkap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mobile-menu-btn").click(function (e) {
+                e.preventDefault();
+                $(".mobile-menu-dropdown").toggleClass("hidden");
+            });
+
+            // Handle click on mobile menu links
+            $(".mobile-menu-dropdown a").click(function (e) {
+                e.preventDefault();
+                $(".mobile-menu-dropdown").addClass("hidden");
+                var targetPage = $(this).attr("href");
+                if (targetPage !== "javascript:void(0)") {
+                    // Redirect to the selected page if it's not "javascript:void(0)"
+                    window.location.href = targetPage;
+                }
+            });
+        });
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./foto/logo_desa.jpg" alt="Rumah Bibit" class="logo" />
+                </a>
+                <p class="site-title">RUMAH BIBIT DIGITAL SUMBER REJO</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="w-screen h-10"></div>
+        <div class="container mx-auto p-8 flex flex-col lg:items-center lg:justify-center">
+            <div class="mb-4 lg:mr-8 lg:mb-5">
+                <img src="./foto/tomat.jpeg" alt="Cabai" class="centered-image rounded-xl" /><br>
+            </div>
+            <div class="classification text-justify">
+                <h2>Tomat</h2>
+                <span class="pl-10">Tomat (Solanum lycopersicum)</span>merupakan tanaman semusim yang tergolong dalam keluarga Solanaceae, menghasilkan buah yang, meskipun botanisnya 
+                diklasifikasikan sebagai berry, umumnya digunakan sebagai sayuran. Tomat memiliki variasi ukuran, bentuk, dan warna, termasuk merah, 
+                oranye, kuning, hijau, dan ungu. Kaya akan nutrisi seperti vitamin C, vitamin A, dan kalium, tomat menjadi bagian penting dari diet 
+                sehat. Dengan penggunaan yang luas dalam masakan, mulai dari saus hingga sup, serta kontribusinya pada industri makanan melalui 
+                produk turunan seperti saus tomat dan pasta tomat, tomat menjadi salah satu komponen utama dalam keanekaragaman kuliner global. 
+                Selain itu, tomat dihubungkan dengan berbagai manfaat kesehatan, terutama melalui kandungan antioksidannya, termasuk likopen yang 
+                telah dikaitkan dengan berbagai manfaat positif.</div>
+        </div>
+
+        <div class="classification text-justify">
+            <h2>Klasifikasi Tomat</h2>
+            <p>Tanaman Tomat termasuk dalam genus <i>Solanum lycopersicum</i>. Berikut adalah klasifikasi Tomat hingga tingkat spesies:</p>
+        
+            <ul>
+                <li><strong>Kingdom:</strong> Plantae (Tumbuhan)</li>
+                <li><strong>Divisi:</strong> Magnoliophyta</li>
+                <li><strong>Kelas:</strong> Magnoliopsida</li>
+                <li><strong>Order:</strong> Solanales</li>
+                <li><strong>Familia:</strong> Solanaceae (familia teratai-terataian)</li>
+                <li><strong>Genus:</strong> Solanum</li>
+                <li><strong>Species:</strong> Lycopersicum</li>
+            </ul>
+            <p>Dengan demikian, secara ilmiah, tomat diklasifikasikan sebagai anggota Kingdom Plantae, 
+                Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Solanales, Famili 
+                Solanaceae, Genus Solanum, dan Spesies Lycopersicum. Klasifikasi ini 
+                membantu para ilmuwan dan peneliti dalam merinci hubungan evolusioner 
+                dan karakteristik tanaman ini dalam kerangka taksonomi yang sistematis.</p>
+        </div>
+
+        <div class ="classification text-justify"> 
+            <h2>Tips Perawatan</h2>
+            <ul>
+                <li><strong>Lokasi Penanaman: </strong> Pilih lokasi dengan sinar matahari penuh, minimal 6-8 jam per hari, untuk memastikan pertumbuhan yang optimal.</li>
+                <li><strong>Penanaman dan Pemeliharaan Tanah: </strong> Tanam tomat setelah risiko beku berlalu dan pastikan memberikan jarak yang cukup antara tanaman untuk memastikan sirkulasi udara yang optimal. Sebelum penanaman, berikan pupuk organik atau kompos untuk meningkatkan kesuburan tanah.</li>
+                <li><strong>Perlindungan dari Hama dan Penyakit: </strong> Periksa secara teratur untuk tanda-tanda hama dan serangan penyakit seperti ulat, kutu daun, atau penyakit daun, dan terapkan metode pengendalian organik atau bahan kimia sesuai kebutuhan.</li>
+                <li><strong>Pemangkasan: </strong> Pemangkasan ringan dapat membantu mengontrol pertumbuhan tanaman, meningkatkan sirkulasi udara, dan memastikan fokus energi pada pembentukan buah.</li>
+                <li><strong>Irigasi: </strong> Pertahankan kelembaban tanah yang konsisten. Hindari penyiraman berlebihan yang dapat menyebabkan pembusukan akar.</li>
+            </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-8">
+        <div class="container mx-auto">
+            <img src="./foto/logo_desa.jpg" alt="logo sumber rejo" class="width 50 px mb-4 mx-auto">
+            <h3 class="text-lg font-semibold">Rumah Bibit</h3>
+            <p class="mb-4">Sumber Rejo, Kota Gajah, Laampung Tengah, Lampung, Dusun 4</p>
+
+            <ul class="flex justify-center space-x-4">
+                <li><a href="https://www.tiktok.com/@kkn68sumberrejo?_t=8jBmcvHpcMz&_r=1" target="_blank" class="text-white"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://www.instagram.com/kkn68_sumberrejo?igsh=ZnJqbWh6OWgzYWxm" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+            <p class="mt-4 text-sm">&copy; KELOMPOK KKN 68</p>
+        </div>
+    </footer>
+</body>
+</html>
